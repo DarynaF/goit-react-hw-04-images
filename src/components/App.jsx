@@ -69,7 +69,7 @@ const App = () => {
   return (
     <div className={css.App}>
       <Searchbar onSubmit={searchPictures} />
-      {!search && <p className={css.requestMassage}>Please enter a request</p>}
+      {!search && <p className={css.requestMassage}>What are you looking for? Just start typing...</p>}
       {error && <p className={css.errorMassage}>{error}</p>}
       {loading && <Loader />}
       {ImageGallery && (
